@@ -1,47 +1,127 @@
-html,
-body {
-  font-family: 'Comfortaa', cursive;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Playfair Display', serif;
-  font-family: 'Poppins', sans-serif;
-}
-
+/* Aturan dasar */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
-  color: #ffffff;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
+/* Font Families */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif;
-  /* sans-serif adalah fallback jika font Oswald tidak bisa dimuat */
+  font-family: 'Oswald', sans-serif; /* Atur warna default untuk teks di header */
 }
-
 p,
-a {
+a,
+ul,
+li {
   font-family: 'Lato', sans-serif;
 }
 
-/* NAVBAR START */
-nav .nav-logo {
+/* NAVBAR */
+.navbar {
+  /* Hapus kelas Bootstrap 'bg-light' */
+  background-color: transparent !important;
+
+  /* Atur posisi agar di atas */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Pastikan navbar berada di depan */
+  padding: 1rem 100px;
+}
+
+.navbar-brand img {
   width: 125px;
   height: 40px;
 }
-nav .booking-button {
-  width: 120px;
-  height: 44px;
+
+.navbar-nav a.nav-link {
+  color: #999999;
+  font-weight: 400;
+  margin: 0 10px;
 }
-/* NAVBAR END */
+
+.navbar-nav a.nav-link.active {
+  color: #888888; /* Warna untuk link Home yang aktif */
+  font-weight: bold;
+}
+
+nav .btn {
+  background-color: #888888;
+  border-color: #888888;
+  color: #fff;
+}
+
+/* HERO-SECTION START */
+/* JUMBOTRON */
+.jumbotron {
+  /* Atur tinggi dan gambar latar belakang */
+  height: 800px;
+  width: 1439px;
+  background-image: url('/assets/img/jumbotron/jumbotron.png');
+  background-size: cover;
+  background-position: center;
+
+  /* Tambahkan margin-top untuk memberi ruang agar navbar tidak menutupi */
+  /* nilai 0-nya. Anda bisa sesuaikan ini sesuai tinggi navbar */
+  margin-top: -60px; /* Contoh */
+}
+/* HERO-SECTION END */
+#hero-section {
+  height: 802px;
+  width: 1440px;
+}
+/* SERVICE START */
+#service {
+  height: 802px;
+  width: 1440px;
+}
+/* Custom CSS untuk Font */
+#services h2,
+#services h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+}
+
+#services p,
+#services .btn {
+  font-family: 'Lato', sans-serif;
+}
+
+#services .btn-warning {
+  background-color: #f6623e;
+  border-color: #f6623e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px; /* Membuat tombol lebih bulat */
+}
+
+#services .article-image-1 {
+  background-image: url('/assets/img/services/image-1.png');
+}
+/* SERVICE END */
+
+/* FACILITIES START */
+#facilities {
+  height: 802px;
+  width: 1440px;
+}
+/* FACILITIES END */
+
+/* PRICING START */
+#pricing {
+  height: 802px;
+  width: 1440px;
+}
+/* PRICING END */
+
+/* TESTIMONIALS START */
+#testimonials {
+  height: 802px;
+  width: 1440px;
+}
+/* TESTIMONIALS END */

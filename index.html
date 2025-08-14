@@ -10,84 +10,242 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <!-- font oswald -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-    <!-- font lato -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- NAVBAR START -->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container d-flex" style="justify-content: space-around">
-        <img
-          class="nav-logo"
-          src="/assets/img/navbar/logo.png"
-          alt=""
-          style="width: 125px; height: 40px"
-        />
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                style="color: #f6623e"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Program & Gear</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand" href="#">
             <img
-              class="booking-button"
-              src="/assets/img/navbar/book-now.png"
-              alt=""
+              class="nav-logo"
+              src="/assets/img/navbar/logo.png"
+              alt="Padel Logo"
             />
-          </span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program & Gear</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Book Now</a>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- NAVBAR END -->
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section">
+        <div class="jumbotron"></div>
+      </section>
+
+      <!-- SERVICES START -->
+      <section id="services">
+        <div class="container py-5">
+          <div class="text-start mb-5">
+            <h2 class="display-5 fw-bold text-dark">
+              Everything You Need for the <br />
+              Perfect Padel Match.
+            </h2>
+            <p class="fs-5 text-secondary">At PADEL, we've got you covered.</p>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-6">
+              <article
+                class="card p-4 h-100 border-0 shadow-sm align-items-center"
+                style="background-color: #d9d9d9"
+              >
+                <div class="row g-0 h-100 align-items-center">
+                  <div
+                    class="col-md-7 d-flex flex-column justify-content-center"
+                  >
+                    <div class="card-body">
+                      <h3 class="card-title fw-bold text-dark">
+                        Book Your Spot <br />
+                        Not Your Day
+                      </h3>
+                      <p class="card-text text-secondary">
+                        Our easy online booking means you can secure your court
+                        with just a few taps, leaving more time for what
+                        matters—the game itself.
+                      </p>
+                      <label
+                        for="Option6"
+                        class="inline-flex items-center gap-3"
+                      >
+                        <span
+                          class="font-medium text-gray-700 dark:text-gray-300"
+                          >Book Now</span
+                        >
+                        <input
+                          type="radio"
+                          class="size-5 rounded-circle border-gray-300 shadow-sm"
+                          id="Option6"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div
+                      class="h-100 bg-light-subtle rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span class="text-muted">Image Placeholder</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article
+                class="card p-4 h-50 border-0 shadow-sm"
+                style="background-color: #d9d9d9"
+              >
+                <div class="row g-0">
+                  <div
+                    class="col-md-7 d-flex flex-column justify-content-center"
+                  >
+                    <div class="card-body">
+                      <h3 class="card-title fw-bold text-dark">
+                        Learn from the Masters
+                      </h3>
+                      <p class="card-text text-secondary">
+                        Get personalized guidance from our expert coaches who
+                        are passionate about helping you improve your skills and
+                        strategy.
+                      </p>
+                      <label
+                        for="Option6"
+                        class="inline-flex items-center gap-3"
+                      >
+                        <span
+                          class="font-medium text-gray-700 dark:text-gray-300"
+                          >Start Improving Your Skills Today</span
+                        >
+                        <input
+                          type="radio"
+                          class="size-5 rounded-circle border-gray-300 shadow-sm"
+                          id="Option6"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div
+                      class="h-100 bg-light-subtle rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span class="text-muted">Image Placeholder</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="card p-4 h-50 border-0 shadow-sm"
+                style="background-color: #d9d9d9"
+              >
+                <div class="row g-0">
+                  <div
+                    class="col-md-7 d-flex flex-column justify-content-center"
+                  >
+                    <div class="card-body">
+                      <h3 class="card-title fw-bold text-dark">
+                        Play with the Best
+                      </h3>
+                      <p class="card-text text-secondary">
+                        We provide top-of-the-line quality equipment so you can
+                        focus on your swing, not your gear.
+                      </p>
+                      <label
+                        for="Option6"
+                        class="inline-flex items-center gap-3"
+                      >
+                        <span
+                          class="font-medium text-gray-700 dark:text-gray-300"
+                          >Find Your Best Equipment</span
+                        >
+                        <input
+                          type="radio"
+                          class="size-5 rounded-circle border-gray-300 shadow-sm"
+                          id="Option6"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div
+                      class="h-100 bg-light-subtle rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span class="text-muted">Image Placeholder</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES END -->
+
+      <section id="facilities">
+        <h2>Explore Our Facilities</h2>
+        <p>
+          We offer a great padel experience with top-notch facilities. <br />
+          Our courts and amenities are all designed for your comfort.
+        </p>
+      </section>
+
+      <section id="pricing">
+        <h2>Great Value for Your Padel Game</h2>
+        <article>
+          <h3>Daily Rental</h3>
+        </article>
+      </section>
+
+      <section id="testimonials">
+        <h2>What Our Players Say</h2>
+        <article>
+          <p>"One of the best..."</p>
+          <cite>Dion, Padel Player</cite>
+        </article>
+      </section>
+    </main>
+
+    <footer></footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
