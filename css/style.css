@@ -12,7 +12,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif; /* Atur warna default untuk teks di header */
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
 }
 p,
 a,
@@ -23,64 +27,49 @@ li {
 
 /* NAVBAR */
 .navbar {
-  /* Hapus kelas Bootstrap 'bg-light' */
-  background-color: transparent !important;
-
-  /* Atur posisi agar di atas */
+  background-color: #00000012;
+  backdrop-filter: blur(13.6px);
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Pastikan navbar berada di depan */
-  padding: 1rem 100px;
+  z-index: 1000;
+  padding: 1rem 2rem; /* Menggunakan padding responsif */
 }
 
 .navbar-brand img {
   width: 125px;
-  height: 40px;
+  height: auto; /* Menggunakan 'auto' agar gambar tetap proporsional */
 }
 
 .navbar-nav a.nav-link {
-  color: #999999;
+  color: #f5f5f5;
   font-weight: 400;
   margin: 0 10px;
 }
 
 .navbar-nav a.nav-link.active {
-  color: #888888; /* Warna untuk link Home yang aktif */
+  color: #ffffff;
   font-weight: bold;
 }
 
-nav .btn {
-  background-color: #888888;
-  border-color: #888888;
-  color: #fff;
-}
-
-/* HERO-SECTION START */
-/* JUMBOTRON */
-.jumbotron {
-  /* Atur tinggi dan gambar latar belakang */
-  height: 800px;
-  width: 1439px;
-  background-image: url('/assets/img/jumbotron/jumbotron.png');
+/* HERO-SECTION */
+#hero-section {
+  /* Gunakan min-height agar dapat menyesuaikan dengan konten */
+  min-height: 800px;
+  width: 100%;
+  background-image: url('/assets/img/jumbotron/background-hero.png');
   background-size: cover;
   background-position: center;
+  /* Hapus margin negatif */
+}
 
-  /* Tambahkan margin-top untuk memberi ruang agar navbar tidak menutupi */
-  /* nilai 0-nya. Anda bisa sesuaikan ini sesuai tinggi navbar */
-  margin-top: -60px; /* Contoh */
+/* SERVICES SECTION */
+#services {
+  height: auto;
+  width: 100%;
+  padding: 5rem 0; /* Tambahkan padding agar ada ruang */
 }
-/* HERO-SECTION END */
-#hero-section {
-  height: 802px;
-  width: 1440px;
-}
-/* SERVICE START */
-#service {
-  height: 802px;
-  width: 1440px;
-}
-/* Custom CSS untuk Font */
+
 #services h2,
 #services h3 {
   font-family: 'Oswald', sans-serif;
@@ -97,31 +86,61 @@ nav .btn {
   border-color: #f6623e;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 50px; /* Membuat tombol lebih bulat */
+  border-radius: 50px;
 }
 
 #services .article-image-1 {
   background-image: url('/assets/img/services/image-1.png');
 }
-/* SERVICE END */
 
-/* FACILITIES START */
+/* FACILITIES SECTION */
 #facilities {
-  height: 802px;
-  width: 1440px;
+  height: auto;
+  width: 100%;
+  padding: 5rem 0;
 }
-/* FACILITIES END */
 
-/* PRICING START */
+/* PRICING SECTION */
 #pricing {
-  height: 802px;
-  width: 1440px;
+  height: auto;
+  width: 100%;
+  padding: 5rem 0;
 }
-/* PRICING END */
 
-/* TESTIMONIALS START */
+/* TESTIMONIALS SECTION */
 #testimonials {
-  height: 802px;
-  width: 1440px;
+  height: auto;
+  width: 100%;
+  padding: 5rem 0;
 }
-/* TESTIMONIALS END */
+
+/* ==================================== */
+/* Media Queries untuk Responsivitas */
+/* ==================================== */
+
+/* Tablet dan Layar Lebih Kecil */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+  }
+}
+
+/* Ponsel */
+@media (max-width: 768px) {
+  /* Pastikan seluruh konten menggunakan 100% lebar layar */
+  .jumbotron {
+    min-height: 400px;
+  }
+
+  .display-5 {
+    font-size: 2.5rem; /* Sesuaikan ukuran font untuk mobile */
+  }
+
+  .fs-5 {
+    font-size: 1rem;
+  }
+}
