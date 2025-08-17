@@ -1,3 +1,5 @@
+/* style.css */
+
 /* Aturan dasar */
 * {
   margin: 0;
@@ -33,12 +35,12 @@ li {
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1rem 2rem; /* Menggunakan padding responsif */
+  padding: 1rem 2rem;
 }
 
 .navbar-brand img {
   width: 125px;
-  height: auto; /* Menggunakan 'auto' agar gambar tetap proporsional */
+  height: auto;
 }
 
 .navbar-nav a.nav-link {
@@ -52,95 +54,77 @@ li {
   font-weight: bold;
 }
 
-/* HERO-SECTION */
-#hero-section {
-  /* Gunakan min-height agar dapat menyesuaikan dengan konten */
-  min-height: 800px;
-  width: 100%;
-  background-image: url('/assets/img/jumbotron/background-hero.png');
-  background-size: cover;
-  background-position: center;
-  /* Hapus margin negatif */
+/* SPASI ANTAR SECTION (CUSTOM) */
+/* Kelas ini akan memberikan spasi yang besar antara bagian */
+.section-spacer {
+  margin-top: 120px; /* Sesuaikan nilai ini agar persis seperti di Figma Anda */
 }
 
-/* SERVICES SECTION */
-#services {
+/* Kelas ini akan memberikan spasi yang lebih kecil antara bagian */
+.section-spacer-sm {
+  margin-top: 60px; /* Sesuaikan nilai ini agar persis seperti di Figma Anda */
+}
+
+/* PERBAIKAN PADDING (Hapus padding bawaan di section) */
+#services,
+#facilities,
+#pricing,
+#testimonials,
+#booking {
+  padding: 0;
   height: auto;
   width: 100%;
-  padding: 5rem 0; /* Tambahkan padding agar ada ruang */
 }
 
-#services h2,
-#services h3 {
-  font-family: 'Oswald', sans-serif;
-  color: #000;
-}
-
-#services p,
-#services .btn {
-  font-family: 'Lato', sans-serif;
-}
-
-#services .btn-warning {
-  background-color: #f6623e;
-  border-color: #f6623e;
+/* FOOTER */
+footer {
+  background-color: #000;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 50px;
 }
-
-#services .article-image-1 {
-  background-image: url('/assets/img/services/image-1.png');
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
-
-/* FACILITIES SECTION */
-#facilities {
-  height: auto;
-  width: 100%;
-  padding: 5rem 0;
+footer a:hover {
+  color: #ffcc00;
 }
-
-/* PRICING SECTION */
-#pricing {
-  height: auto;
-  width: 100%;
-  padding: 5rem 0;
-}
-
-/* TESTIMONIALS SECTION */
-#testimonials {
-  height: auto;
-  width: 100%;
-  padding: 5rem 0;
+.centered-hr {
+  max-width: 1128px; /* Batasi lebar sesuai keinginan Anda */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ==================================== */
 /* Media Queries untuk Responsivitas */
 /* ==================================== */
 
-/* Tablet dan Layar Lebih Kecil */
 @media (max-width: 992px) {
   .navbar {
     padding: 1rem 1rem;
   }
-
   .navbar-brand img {
     width: 100px;
   }
+  .section-spacer {
+    margin-top: 80px;
+  }
+  .section-spacer-sm {
+    margin-top: 40px;
+  }
 }
 
-/* Ponsel */
 @media (max-width: 768px) {
-  /* Pastikan seluruh konten menggunakan 100% lebar layar */
-  .jumbotron {
-    min-height: 400px;
-  }
-
   .display-5 {
-    font-size: 2.5rem; /* Sesuaikan ukuran font untuk mobile */
+    font-size: 2.5rem;
   }
-
   .fs-5 {
     font-size: 1rem;
+  }
+  .section-spacer {
+    margin-top: 60px;
+  }
+  .section-spacer-sm {
+    margin-top: 30px;
   }
 }
