@@ -28,7 +28,7 @@ li {
 }
 
 /* NAVBAR */
-.navbar {
+/* .navbar {
   background-color: #00000012;
   backdrop-filter: blur(13.6px);
   position: absolute;
@@ -38,6 +38,40 @@ li {
   padding: 1rem 2rem;
 }
 
+.navbar-brand img {
+  width: 125px;
+  height: auto;
+}
+
+.navbar-nav a.nav-link {
+  color: #f5f5f5;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+.navbar-nav a.nav-link.active {
+  color: #ffffff;
+  font-weight: bold;
+} */
+/* Styling Navbar */
+.navbar {
+  /* Hapus backdrop-filter dari sini */
+  background-color: transparent; /* Awalnya transparan */
+  position: fixed; /* Ganti 'absolute' menjadi 'fixed' agar tetap muncul saat di-scroll */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+/* Tambahkan kelas baru untuk efek 'glassy' saat di-scroll */
+.navbar.scrolled {
+  background-color: #00000012; /* Warna latar belakang 'glassy' yang Anda inginkan */
+  backdrop-filter: blur(13.6px); /* Efek buram 'glassy' */
+}
+
+/* Sisa CSS Anda tidak perlu diubah */
 .navbar-brand img {
   width: 125px;
   height: auto;

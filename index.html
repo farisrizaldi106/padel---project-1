@@ -20,6 +20,7 @@
   </head>
   <body>
     <header>
+      <!-- NAVBAR START -->
       <nav class="navbar navbar-expand-lg">
         <div class="container d-flex justify-content-evenly">
           <a class="navbar-brand" href="#">
@@ -46,43 +47,37 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#services">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Booking</a>
+                <a class="nav-link" href="#pricing">Booking</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Program & Gear</a>
+                <a class="nav-link" href="#facilities">Program & Gear</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
+                <a class="nav-link" href="#booking">Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
             <button
-              class="btn d-flex align-items-center px-3 py-2"
+              class="btn d-flex align-items-center px-3 py-2 gap-2"
               style="background-color: #003399; border-radius: 10px"
             >
               <a href="#booking" class="text-light text-decoration-none"
                 >Book Now</a
               >
-              <span
-                class="ms-2 rounded-circle"
-                style="
-                  width: 20px;
-                  height: 20px;
-                  background-color: #d9d9d9;
-                  display: inline-block;
-                "
-              ></span>
+              <img src="./assets/icon/navbar/arrowupright-white.svg" alt="" />
             </button>
           </div>
         </div>
       </nav>
+      <!-- NAVBAR END -->
     </header>
     <main>
+      <!-- HERO SECTION START -->
       <section
         class="d-flex align-items-center"
         style="
@@ -95,7 +90,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h1 class="fw-normal lh-base text-light">
+              <h1 class="fw-normal lh-base text-dark">
                 Everything You Need for the <br />
                 <span class="fw-bold">Perfect Padel Match.</span>
               </h1>
@@ -103,13 +98,17 @@
           </div>
         </div>
       </section>
+      <!-- HERO SECTION END -->
 
+      <!-- SERVICES SECTION START -->
       <section id="services" class="section-spacer">
         <div class="container py-5">
           <div class="text-start mb-5">
-            <h2 class="display-5 fw-bold text-dark">
+            <h2 class="display-5 fw-normal text-dark">
               Everything You Need for the <br />
-              <span style="color: #003399">Perfect Padel Match.</span>
+              <span class="fw-bold" style="color: #003399"
+                >Perfect Padel Match.</span
+              >
             </h2>
             <p class="fs-5 text-secondary">At PADEL, we've got you covered.</p>
           </div>
@@ -135,19 +134,14 @@
                       </p>
                       <a
                         href="#"
-                        class="d-flex align-items-center text-decoration-none fw-bold"
+                        class="d-flex align-items-center text-decoration-none fw-bold gap-2"
                         style="color: #003399"
                       >
                         Book Now
-                        <span
-                          class="ms-2 rounded-circle border border-dark"
-                          style="
-                            width: 20px;
-                            height: 20px;
-                            background-color: #d9d9d9;
-                            display: inline-block;
-                          "
-                        ></span>
+                        <img
+                          src="./assets/icon/services/arrowupright-blue.svg"
+                          alt=""
+                        />
                       </a>
                     </div>
                   </div>
@@ -181,19 +175,14 @@
                       </p>
                       <a
                         href="#"
-                        class="d-flex align-items-center text-decoration-none fw-bold"
+                        class="d-flex align-items-center text-decoration-none fw-bold gap-2"
                         style="color: #003399"
                       >
                         Start Improving Your Skills Today
-                        <span
-                          class="ms-2 rounded-circle border border-dark"
-                          style="
-                            width: 20px;
-                            height: 20px;
-                            background-color: #d9d9d9;
-                            display: inline-block;
-                          "
-                        ></span>
+                        <img
+                          src="./assets/icon/services/arrowupright-blue.svg"
+                          alt=""
+                        />
                       </a>
                     </div>
                   </div>
@@ -226,19 +215,14 @@
                       </p>
                       <a
                         href="#"
-                        class="d-flex align-items-center text-decoration-none fw-bold"
+                        class="d-flex align-items-center text-decoration-none fw-bold gap-2"
                         style="color: #003399"
                       >
                         Find Your Best Equipment
-                        <span
-                          class="ms-2 rounded-circle border border-dark"
-                          style="
-                            width: 20px;
-                            height: 20px;
-                            background-color: #d9d9d9;
-                            display: inline-block;
-                          "
-                        ></span>
+                        <img
+                          src="./assets/icon/services/arrowupright-blue.svg"
+                          alt=""
+                        />
                       </a>
                     </div>
                   </div>
@@ -257,7 +241,9 @@
           </div>
         </div>
       </section>
+      <!-- SERVICES SECTION START -->
 
+      <!-- FACILITIES SECTION START -->
       <section
         id="facilities"
         class="section-spacer-sm"
@@ -302,7 +288,9 @@
           </div>
         </div>
       </section>
+      <!-- FACILITIES SECTION END -->
 
+      <!-- PRICING SECTION START -->
       <section id="pricing" class="section-spacer">
         <div class="container py-5">
           <div class="row justify-content-around text-start mb-5">
@@ -452,7 +440,9 @@
           </div>
         </div>
       </section>
+      <!-- PRICING SECTION END -->
 
+      <!-- TESTIMONIALS SECTION START -->
       <section id="testimonials" class="section-spacer-sm">
         <div class="container py-5">
           <div class="text-start mb-5">
@@ -489,7 +479,9 @@
           </div>
         </div>
       </section>
+      <!-- TESTIMONIALS SECTION END -->
 
+      <!-- BOOKING SECTION START -->
       <section id="booking" class="section-spacer-sm">
         <div class="container py-5">
           <div
@@ -521,20 +513,32 @@
           </div>
         </div>
       </section>
+      <!-- BOOKING SECTION END -->
     </main>
 
+    <!-- FOOTER START -->
     <footer>
       <div class="container py-3 justify-content-evenly mx-auto">
         <div class="row pt-5">
           <div class="col-lg-1 mb-4 mb-lg-0">
             <!-- none -->
           </div>
-          <div class="col-lg-5 mb-4 mb-lg-0">
+          <div id="contact" class="col-lg-5 mb-4 mb-lg-0">
             <img
-              src="./assets/img/navbar/logo.png"
+              src="./assets/img/footer/Frame 5.png"
               alt="Padel Logo"
               class="footer-logo mb-3"
             />
+            <div
+              class="d-flex m-0 gap-1 justify-content-start align-items-center"
+            >
+              <img src="./assets/icon/footer/mail.svg" alt="" />
+              <p>padelproplayer@email.com</p>
+            </div>
+            <div class="d-flex m-0 gap-1 align-items-end">
+              <img src="./assets/icon/footer/whatsapp.svg" alt="" />
+              <p>0812-3456-7890</p>
+            </div>
           </div>
           <div class="col-lg-3 mb-4 mb-lg-0">
             <h5>Let's Meet on the Court</h5>
@@ -550,58 +554,45 @@
           </div>
           <div class="col-lg-2">
             <h5>Join The Club</h5>
-            <div class="d-flex m-0">
-              <span
-                class="ms-2 rounded-4 border border-dark"
-                style="
-                  width: 20px;
-                  height: 20px;
-                  background-color: #d9d9d9;
-                  display: inline-block;
-                "
-              ></span>
-              <span
-                class="ms-2 rounded-4 border border-dark"
-                style="
-                  width: 20px;
-                  height: 20px;
-                  background-color: #d9d9d9;
-                  display: inline-block;
-                "
-              ></span>
-              <span
-                class="ms-2 rounded-4 border border-dark"
-                style="
-                  width: 20px;
-                  height: 20px;
-                  background-color: #d9d9d9;
-                  display: inline-block;
-                "
-              ></span>
-              <span
-                class="ms-2 rounded-4 border border-dark"
-                style="
-                  width: 20px;
-                  height: 20px;
-                  background-color: #d9d9d9;
-                  display: inline-block;
-                "
-              ></span>
+            <div class="d-flex m-0 ms-0 gap-2">
+              <img src="./assets/icon/footer/instagram.svg" alt="" />
+              <img src="./assets/icon/footer/linkedin.svg" alt="" />
+              <img src="./assets/icon/footer/facebook.svg" alt="" />
+              <img src="./assets/icon/footer/tiktok.svg" alt="" />
             </div>
           </div>
         </div>
         <!-- HR -->
-        <hr class="centered-hr" />
+        <hr
+          class="centered-hr border border-2"
+          style="border: none; height: 2px; background-color: purple"
+        />
         <p class="container text-center pt-2 fw-light" style="color: #c2c2c2">
           Copyright 2025 | Playpadel
         </p>
       </div>
     </footer>
+    <!-- FOOTER END -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!-- JS NAVBAR RETURN TO GLASSES WHEN IT SCROLLED -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const navbar = document.querySelector('.navbar'); // Gunakan selector kelas
+        const scrollThreshold = 50; // Jarak gulir sebelum navbar berubah
+
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > scrollThreshold) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
